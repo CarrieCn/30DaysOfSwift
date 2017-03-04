@@ -17,6 +17,10 @@ class ViewController: UIViewController {
     var counter = 0.0
     var timer = Timer()
     var isPlaying = false
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
     override func viewDidLoad() {
         timeLabel.text = String(counter)
